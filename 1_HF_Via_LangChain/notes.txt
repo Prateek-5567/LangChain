@@ -1,0 +1,21 @@
+ye jitna bhi code hai is folder mee that is based on : Dowloading the model
+ onto your local Machine and then running command on it.
+
+prateek@Prateeks-MacBook-Air LangChain %            cd HuggingFaceCore 
+prateek@Prateeks-MacBook-Air HuggingFaceCore %      python3.12 -m venv venv
+prateek@Prateeks-MacBook-Air HuggingFaceCore %      source venv/bin/activate
+((venv) ) prateek@Prateeks-MacBook-Air HuggingFaceCore % pip3 install -r requirements.txt
+
+I have installed   gpt2(500-MB)  and  t5-small(242-MB)   models and they are saved in local cache of my system
+
+# to check which all models are downloaded and got stored in cache:
+
+    prateek@Prateeks-MacBook-Air ~ % ls ~/.cache/huggingface/hub/
+    models--gpt2				models--t5-small
+    microsoft--DialoGPT-small
+
+    delete them as soon as their work is over.
+
+    # Delete just DialoGPT-small
+    rm -rf ~/.cache/huggingface/hub/models--microsoft--DialoGPT-small
+
